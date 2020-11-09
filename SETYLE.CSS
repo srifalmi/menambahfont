@@ -40,13 +40,14 @@ html {
 }
 
 .container {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   background-color: #f2eecb;
   border-radius: 4px;
   padding: 32px;
 
 }
+
 .frame {
 border : 1px solid var(--main-black-color);
 
@@ -58,11 +59,13 @@ justify-content: space-between;
 
 }
 
+
 .header{
   display : flex;
   align-items: flex-start;
 
 }
+
 .header-title {
   flex : 1;
   text-align: center;
@@ -90,59 +93,95 @@ justify-content: space-between;
   outline: unset; 
 
 }
- .add{
-   padding: 16px;
+ 
+ .header-button.main-red-color:active {
+
+  text-shadow: 1px 1px 2px var(--main-red-color);
+  
+ }
+  .header-button.main-black-color:active {
+
+    text-shadow: 1px 1px 2px var(--main-black-color);
     
- }
- .add-form{
-   display: flex;
-   align-items: flex-start;
+}
 
-
- }
-.add-input{
-  background: unset;
-  border: unset;
-  padding: 0 64px;
+.add{
+  padding: 16px;
    
-  flex: 1;
+}
+.add-form{
+  display: flex;
+  align-items: flex-start;
 
-  border-bottom : 1px solid var(--main-red-color);
-  outline: unset;
+
+}
+.add-input{
+ background: unset;
+ border: unset;
+ padding: 0 64px;
+  
+ flex: 1;
+
+ border-bottom : 1px solid var(--main-red-color);
+ outline: unset;
 
 
-  font-family: "Trispace", sans-serif;
-  font-size: 16px;
-  text-transform : lowercase;
+ font-family: "Trispace", sans-serif;
+ font-size: 16px;
+ text-transform : lowercase;
 
 
 }
 
 .add-button{
-  font-size: 1.8rem;
-  font-family: "Bungee", sans-serif;
+ font-size: 1.8rem;
+ font-family: "Bungee", sans-serif;
 
-  padding: 16px;
-  padding-right: unset;
-  cursor: pointer;
+ padding: 16px;
+ padding-right: unset;
+ cursor: pointer;
 
-  background : unset;
-  border: unset;
-  outline: unset;
+ background : unset;
+ border: unset;
+ outline: unset;
 
 }
 
+.add-button.main-black-color:active{
+  text-shadow: 1px 1px 2px var(--main-black-color);
+}
 
- .header-button.main-red-color :active{
+.todos {
+  display : flex;
+  flex-direction : column;
 
-  text-shadow: 1px 1px 2px var(--main-red-color);
+}
+
+.todo{
+  position : relative;
+
+  flex :1 0 auto;
+  text-align: center;
+
+  min-height: 34px;
+  margin : 16px 0 0 ;
+font-family: "Trispace", sans-serif;
+font-size: 24px;
+
+border-bottom: 1px solid var(--main-red-color);
+
+
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   
- }
-  .header-button.main-black-color :active{
-
-    text-shadow: 1px 1px 2px var(--main-black-color);
-    
 }
+ 
+
+
 
 
 
